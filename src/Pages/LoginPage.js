@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Input from "../Components/Input";
 import ButtonWithProgress from "../Components/ButtonWithProgress"
 
+
  const LoginPage = (props) =>{
   const[username,setUsername] = useState('')
   const[password,setPassword] = useState('')
@@ -88,9 +89,6 @@ import ButtonWithProgress from "../Components/ButtonWithProgress"
           text = "Login"
           onClick = {onClickLogin}
           />
-        </div>
-        <div>
-          <h1>porat</h1>
         </div>
       </div>
     );
