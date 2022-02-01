@@ -8,6 +8,7 @@ import ButtonWithProgress from "../Components/ButtonWithProgress"
   const[apiError,setApiError] = useState(undefined)
   const[pendingApiCalls,setPendingApiCall] = useState(false)
 
+
   //actions
  const onChangeUserName = (event) => {
    const value = event.target.value
@@ -54,7 +55,7 @@ import ButtonWithProgress from "../Components/ButtonWithProgress"
             label="User Name"
             placeholder="Your User Name"
             value={username}
-            onChange={this.onChangeUserName}
+            onChange={onChangeUserName}
           />
         </div>
 
@@ -64,14 +65,14 @@ import ButtonWithProgress from "../Components/ButtonWithProgress"
             placeholder="Your Password"
             type="password"
             value={password}
-            onChange={this.onChangePassword}
+            onChange={onChangePassword}
           />
         </div>
 
         <div className="text-center">
-          {this.state.apiError && (
+          {apiError && (
             <div className="col-12 mb-3">
-              <div className="alert alert-danger">{this.state.apiError}</div>
+              <div className="alert alert-danger">{apiError}</div>
             </div>
           )}
           {/* <button
@@ -92,4 +93,4 @@ import ButtonWithProgress from "../Components/ButtonWithProgress"
     );
   }
 
-export default LoginPage
+  export default LoginPage

@@ -1,7 +1,7 @@
 import './App.css';
 import UserSignUpPage from './Pages/UserSignUpPage'
 import * as apiCalls from './Api/apiCalls'
-import {LoginPage} from './Pages/LoginPage'
+import LoginPage from './Pages/LoginPage'
 import {BrowserRouter,Navigate,Route,Routes} from 'react-router-dom'
 import MainHeader from './Components/MainHeader';
 import HomePage from "./Pages/HomePage"
